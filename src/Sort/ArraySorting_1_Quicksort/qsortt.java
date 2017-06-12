@@ -6,20 +6,20 @@ public class qsortt {
 
     static class QuickSortExample {
         static int ARRAY_LENGTH = 30;
-         static int[] array = new int[ARRAY_LENGTH];
-         static Random generator = new Random();
+        static int[] array = new int[ARRAY_LENGTH];
+        static Random generator = new Random();
 
         public static void initArray() {
-            for (int i=0; i<ARRAY_LENGTH; i++) {
+            for (int i = 0; i < ARRAY_LENGTH; i++) {
                 array[i] = generator.nextInt(100);
             }
         }
 
         public static void printArray() {
-            for (int i=0; i<ARRAY_LENGTH-1; i++) {
+            for (int i = 0; i < ARRAY_LENGTH - 1; i++) {
                 System.out.print(array[i] + ", ");
             }
-            System.out.println(array[ARRAY_LENGTH-1]);
+            System.out.println(array[ARRAY_LENGTH - 1]);
         }
 
         public static void quickSort() {
@@ -51,7 +51,7 @@ public class qsortt {
                 }
             }
             doSort(start, cur);
-            doSort(cur+1, end);
+            doSort(cur + 1, end);
         }
 
         public static void main(String[] args) {
@@ -60,6 +60,6 @@ public class qsortt {
             quickSort();
             printArray();
         }
-}
+    }
 }
 
